@@ -30,7 +30,7 @@ app.post("/post", function(req, res) {
 });
 
 // DELETE taskid
-app.delete("/delete", function(req, res){
+app.delete("/delete/:taskid", function(req, res){
 
     console.log(req.body);
     res.json({delete: true});
